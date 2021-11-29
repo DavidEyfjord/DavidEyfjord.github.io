@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"> 
+    <title>Blackbox síða Verkefni 7</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="contents"> 
+    <header class="header content">
+      <div>
+        <h1>
+        <img src="blackbox-O.svg" style="width: 100%;">
+        </h1>
+      </div>
+      <div>
+        <p class="verkefni">Verkefni 5.1</p>
+        <nav class="topnav">
+          <a href="index.html" title="Heima">Heima</a>
+          <a href="sida2.html" title="Matseðill">Matseðill</a>
+        </nav>
+      </div>
+    </header>
+    <section class="bg-base"> 
+      <main class="main content col-2">
+        <section>
+          <h1>Innihald okkar</h1>
+          <p>Pizzubotnarnir okkar
+            Sælkerapizzubotninn okkar er súrdeigs en þú getur líka fengið ketóbotn eða glútenlausan.</p>
+          <p>Við notum einungis hágæða hráefni. Hráskinkan okkar er skorin fersk á hverja Parma Rucola pizzu, við notum eingöngu ferskan jalapenó og náttúrulegar Miðjarðarhafs ólífur og andalærið okkar kemur frá stórvinum okkar í Kjötkompaní. </p>
+          <augl><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fblackboxpizzeria.is%2Fvideos%2F467164904620671%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></augl></p>
+        </section>
+        <section> 
+          <h1>Staðirnir</h1>
+          <p>Við opnuðum fyrsta staðinn okkar í Borgartúni 26 mánudaginn 22.janúar 2018.</p>
+          <p>Síðan opnuðum við annað stað á Akureyri &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hafnarstræti 87-89, Akureyri 600 Iceland</p>
+          <img src="blackbox stadir.jpg" style="width: 100%;">
+          <h2> Ofninn okkar er einstakur. hann nær 400 gráðu hita - pizzan snýst einn hring og eldbakast á aðeins tveimur mínútum! </h2>
+        </section>
+      </main>
+      <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWRleWZqb3JkIiwiYSI6ImNrd2tuOWN5NzF0bDcydnBtcTEzY2l0eXgifQ.aBZdMw5-CS-owB6MTC3e7g';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
+    </section>
+    <footer class="footer content">
+        <nav>
+        <ul>
+              <li> 
+                <p>Opnunartímar:</p>        
+              </li>  
+              <li>
+                <p>Borgartún</p> 
+              </li>
+              <li>
+                <p>Mánudaga til Föstudaga
+                    11:00-21:00
+                    Laugardaga og Sunnudaga
+                    12:00-21:00</p>
+              </li>
+              <li>
+                <p>Akureyri</p>
+              </li>
+              <li> Sunnudaga til Fimmtudaga
+                17:00-21:00
+                Föstudaga og Laugardaga
+                17:00-22:00
+                </li>
+        </ul>
+        </nav>
+      </footer>
+    <p class="copy">&copy; 2021 Davíð Eyfjörð Þorsteinsson</p>
+  </body>
+</html>
