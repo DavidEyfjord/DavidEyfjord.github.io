@@ -16,6 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Noto+Serif:ital,wght@1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="contents"> 
     <header class="header content">
@@ -28,18 +35,22 @@
         <p class="verkefni">Verkefni 5.1</p>
         <nav class="topnav">
           <a href="index.html" title="Heima">Heima</a>
-          <a href="sida2.html" title="Matseðill">Matseðill</a>
         </nav>
       </div>
     </header>
     <section class="bg-base"> 
       <main class="main content col-2">
         <section>
-          <h1>Innihald okkar</h1>
+          <h1>Innihald okkar</h1>   
           <p>Pizzubotnarnir okkar
             Sælkerapizzubotninn okkar er súrdeigs en þú getur líka fengið ketóbotn eða glútenlausan.</p>
           <p>Við notum einungis hágæða hráefni. Hráskinkan okkar er skorin fersk á hverja Parma Rucola pizzu, við notum eingöngu ferskan jalapenó og náttúrulegar Miðjarðarhafs ólífur og andalærið okkar kemur frá stórvinum okkar í Kjötkompaní. </p>
-          <augl><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fblackboxpizzeria.is%2Fvideos%2F467164904620671%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></augl></p>
+          <augl><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fblackboxpizzeria.is%2Fvideos%2F467164904620671%2F&show_text=false&width=476&t=0" max-width=100% height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></augl></p>
+          <audio controls>
+            <source src="Blackát.mp3" type="audio/ogg">
+            <source src="Blackát.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
         </section>
         <section> 
           <h1>Staðirnir</h1>
@@ -48,16 +59,12 @@
           <img src="blackbox stadir.jpg" style="width: 100%;">
           <h2> Ofninn okkar er einstakur. hann nær 400 gráðu hita - pizzan snýst einn hring og eldbakast á aðeins tveimur mínútum! </h2>
         </section>
-      </main>
-      <div id='map' style='width: 400px; height: 300px;'></div>
-        <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2aWRleWZqb3JkIiwiYSI6ImNrd2tuOWN5NzF0bDcydnBtcTEzY2l0eXgifQ.aBZdMw5-CS-owB6MTC3e7g';
-        var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-});
-</script>
+        <section class="map-responsive">
+      
+        <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1739.892988335107!2d-21.9007928839686!3d64.14575642292928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674c698cfeb3b%3A0x4ad194617f6184a7!2sBlackbox%20Pizzeria%20%7C%20Dj%C3%BAs%C3%AD%20by%20Blackbox!5e0!3m2!1sen!2sis!4v1638262215129!5m2!1sen!2sis" max-width=100% height="450" style="border:0;" allowfullscreen></iframe>
+        </section>
     </section>
+</main>
     <footer class="footer content">
         <nav>
         <ul>
