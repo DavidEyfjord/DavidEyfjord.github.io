@@ -1,1 +1,0 @@
-# DavidEyfjord.github.io
